@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Lab</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    input, button { padding: 8px; margin: 5px; }
+    li { margin: 8px 0; }
+    table { border-collapse: collapse; margin-top: 15px; width: 100%; max-width: 700px; }
+    th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
+
+  <h1 id="title">My DOM App</h1>
+
+  <input type="text" id="inputBox" placeholder="Enter something">
+  <button id="btnAction">Click Me</button>
+  <button id="toggleBtn">Toggle Output</button>
+
+  <p id="output"></p>
+
+  <hr>
+
+  <h2>Task List</h2>
+  <input type="text" id="taskInput" placeholder="Enter task">
+  <button id="addBtn">Add Task</button>
+  <p id="count"></p>
+  <ul id="taskList"></ul>
+
+  <hr>
+
+  <h2>Student Table</h2>
+  <input type="text" id="studName" placeholder="Student name">
+  <input type="text" id="studAge" placeholder="Age">
+  <button id="addRowBtn">Add Row</button>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    // Your code here
+  </script>
+</body>
+</html>
