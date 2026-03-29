@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Traversal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        body {
+            margin: 50px;
+            font-family: arial;
+            background-color: #cfcbcb;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 900px;
+            margin: auto;
+        }
+        .card {
+            display: inline-block;
+            width: 120px;
+            padding: 0 80px;
+            height: 90px;
+            font-size: 10px;
+            line-height: 80px;
+            border-radius: 10px;
+            background-color: #e9f6f7f8;
+            margin: 5px;
+            position: relative;
+            text-align: center;
+        }
+        .card img {
+            float: left;
+            margin: 0 10px 0 -80px;
+            padding: 5px;
+            height: 80px;
+            width: 80px;
+            border-radius: 20%;
+            position: relative;
+        }
+        .card .nama,
+        .card .phone {
+            display: block;
+            line-height: 20px;
+            padding: 0 5px;
+        }
+        .card .nama {
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 17px;
+        }
+        .card .phone {
+            margin-left: 20px;
+            margin-top: 5px;
+            font-size: 12px;
+            color: #aaa;
+        }
+        .card .close {
+            font-size: 24px;
+            font-weight: bold;
+            color: #311c1c;
+            position: absolute;
+            top: 0;
+            right: 30px;
+            cursor: pointer;
+        }
+        .card:hover .close {
+            color: red;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/men/1.jpg" width="96" height="96">
+            <span class="nama">Abdul Aliman</span>
+            <span class="phone">011-8345679</span>
+            <span class="close">×</span>
+        </div>
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/women/2.jpg" width="96" height="96">
+            <span class="nama">Gabmi Sablu</span>
+            <span class="phone">013-88126789</span>
+            <span class="close">×</span>
+        </div>
+
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/women/3.jpg" width="96" height="96">
+            <span class="nama">Salwa Mabni</span>
+            <span class="phone">0881-123456789</span>
+            <span class="close">×</span>
+        </div>
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/men/4.jpg" width="96" height="96">
+            <span class="nama">Darhi Sabma</span>
+            <span class="phone">08123456789</span>
+            <span class="close">×</span>
+        </div>
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/women/5.jpg" width="96" height="96">
+            <span class="nama">Sabiah Manaf</span>
+            <span class="phone">08123454432</span>
+            <span class="close">×</span>
+        </div>
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/men/6.jpg" width="96" height="96">
+            <span class="nama">Mandali Kamil Shah</span>
+            <span class="phone">0118245679</span>
+            <span class="close">×</span>
+        </div>
+</div>
+        <script>
+        </script>
+</body>
+</html>
